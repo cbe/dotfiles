@@ -1,0 +1,4 @@
+# load functions first
+source ~/dotfiles/bash/functions
+
+source ~/dotfiles/bash/config

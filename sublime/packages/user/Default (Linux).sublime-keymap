@@ -1,0 +1,9 @@
+[
+  // Reset font size
+  { "keys": ["ctrl+0"], "command": "reset_font_size" },
+
+  //// emacs-behaviour
+  // move lines
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+  { "keys": ["alt+up"], "command": "swap_line_up" }
+]

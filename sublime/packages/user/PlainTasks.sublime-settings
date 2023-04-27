@@ -1,0 +1,16 @@
+{
+  "open_tasks_bullet": "[ ]", // options: - | ❍ | ❑ | ■ | □ | ☐ | ▪ | ▫ | – | — ≡ → › | [ ]
+  "done_tasks_bullet": "[x]", // options: + | ✓ | ✔ | √ | [x]
+  "cancelled_tasks_bullet": "[-]", // options: x | ✘ | [-]
+  "date_format": "(%Y-%m-%d %H:%M)",
+  "color_scheme": "Packages/Theme - Gravity/One Dark Gravity.tmTheme",
+  "font_options": [
+    "no_italic"
+  ],
+  "font_face": "Hack",
+  "extensions":
+  [
+    "todo",
+    "tasks"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "node_path": "$(which node)",
+  "auto_format_on_save": true,
+  "auto_format_on_save_requires_prettier_config": true,
+  "prettier_options": {
+    "singleQuote": false,
+    "trailingComma": "none"
+  }
+}

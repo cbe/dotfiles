@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+describe("${1:}", () => {
+  ${0:}
+});]]></content>
+  <tabTrigger>describe</tabTrigger>
+  <scope>source.js</scope>
+  <description>describe-Block</description>
+</snippet>

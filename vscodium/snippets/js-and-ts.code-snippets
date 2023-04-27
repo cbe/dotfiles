@@ -1,0 +1,32 @@
+{
+	"Immediately invoked function expression": {
+		"scope": "javascript,typescript,typescriptreact",
+    "prefix": ["iife", "immediately"],
+    "body": [
+      "(() => {",
+      "\t${0:}",
+      "})();"
+    ],
+    "description": "An immediately invoked function expression"
+  },
+  "'describe'-Block": {
+		"scope": "javascript,typescript",
+    "prefix": ["describe"],
+    "body": [
+      "describe(\"${1:description}\", () => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "A 'describe' block for unit tests"
+  },
+  "'it'-Block": {
+		"scope": "javascript,typescript",
+    "prefix": ["it"],
+    "body": [
+      "it(\"${1:description}\",${2| , async |}() => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "An 'it' block for unit tests"
+  },
+}

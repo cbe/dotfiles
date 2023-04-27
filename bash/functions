@@ -1,0 +1,38 @@
+# make directory and change to it directly
+function mcd() { mkdir -p $1; cd $1; }
+
+# ’private’ functions
+# append ‘PATH‘ variable, https://superuser.com/a/753948
+function _append_path() {
+  for ARG in "$@"; do
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+      PATH="${PATH:+"$PATH:"}$ARG"
+    fi
+  done
+}
+
+# prepend ‘PATH‘ variable, https://superuser.com/a/753948
+function _prepend_path() {
+  for ((i=$#; i>0; i--)); do
+    ARG=${!i}
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+      PATH="$ARG${PATH:+":$PATH"}"
+    fi
+  done
+}
+
+# distinuish between plattforms
+function _is_linux() {
+  if [[ $(uname -s) == "Linux" ]]; then
+    return 0;
+  else
+    return 1;
+  fi
+}
+function _is_mac() {
+  if [[ $(uname -s) == "Darwin" ]]; then
+    return 0;
+  else
+    return 1;
+  fi
+}

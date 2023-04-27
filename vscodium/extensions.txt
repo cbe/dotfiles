@@ -1,0 +1,10 @@
+astro-build.astro-vscode
+bbenoist.Nix
+bungcip.better-toml
+Catppuccin.catppuccin-vsc
+coolbear.systemd-unit-file
+dbaeumer.vscode-eslint
+eamodio.gitlens
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+mikestead.dotenv

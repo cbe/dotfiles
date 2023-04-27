@@ -1,0 +1,31 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+
+# Packages
+brew "difftastic"
+brew "exa"
+brew "git"
+brew "imagemagick"
+brew "jd"
+brew "jq"
+brew "media-info"
+brew "nvim"
+brew "pwgen"
+brew "ripgrep"
+brew "starship"
+brew "tree" # Why u no tree, osx?
+
+# Casks
+cask_args appdir: "/Applications"
+cask "amethyst"
+cask "firefox"
+cask "homebrew/cask-fonts/font-iosevka-nerd-font"
+cask "imageoptim"
+cask "insomnia"
+cask "keepassxc"
+cask "vscodium"

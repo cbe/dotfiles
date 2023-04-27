@@ -1,0 +1,6 @@
+[include]
+  path = "~/dotfiles/git/gitconfig"
+
+[user]
+  name = cbenker
+  email = cbenker@users.noreply.github.com

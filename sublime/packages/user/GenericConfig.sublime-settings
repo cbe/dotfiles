@@ -1,0 +1,16 @@
+{
+	"extensions":
+	[
+		"automount",
+		"mount",
+		"service",
+		"tmpl",
+		"Corefile",
+		"toml",
+		"timer",
+		"local",
+		"ini",
+		"conf",
+		"cfg",
+	],
+}

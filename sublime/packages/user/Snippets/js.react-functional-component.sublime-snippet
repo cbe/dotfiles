@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+export const ${1:MyComponent} = (props) => {
+  const className = classnames("${1:my-component}", props.className);
+
+  return (
+    <div className={className}>
+      ${0:}
+    </div>
+  );
+};
+${1:MyComponent}.propTypes = {
+  className: PropTypes.string
+};
+]]></content>
+  <tabTrigger>react-functional-component</tabTrigger>
+  <scope>source.js</scope>
+  <description>Functional React Component</description>
+</snippet>

@@ -1,0 +1,14 @@
+{
+  // A File Icon Preferences – User
+  // ================================================================
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // ! PLEASE RESTART SUBLIME TEXT FOR THESE CHANGES TO TAKE EFFECT !
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //
+  // The opacity level of the default icon state.
+  "opacity": 0.5,
+
+  // The opacity level of the hovered icon state.
+  "opacity_on_hover": 1.0
+}

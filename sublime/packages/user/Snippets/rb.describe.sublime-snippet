@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+describe '${1:}' do
+  ${0:}
+end # ${1:}
+]]></content>
+  <tabTrigger>describe</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>describe-Block</description>
+</snippet>

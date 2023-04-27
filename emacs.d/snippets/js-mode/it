@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: it
+# key: it
+# group: spec
+# --
+it("${1:description}", () => {
+  $0
+});

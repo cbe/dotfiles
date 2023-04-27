@@ -1,0 +1,10 @@
+{
+  "phpcs_execute_on_save": false,
+  "phpcs_show_errors_in_status": true,
+  "phpcs_command_on_save": false,
+  "php_cs_fixer_on_save": false,
+  "phpcs_linter_run": true,
+  "phpcs_linter_command_on_save": false,
+  "phpmd_run": false,
+  "phpmd_command_on_save": false
+}

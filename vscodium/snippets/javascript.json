@@ -1,0 +1,15 @@
+{
+  "Functional React component": {
+    "prefix": ["react", "component", "export"],
+    "body": [
+      "export const ${1:ComponentName} = (props) => {",
+      "\treturn (",
+      "\t\t${0:}",
+      "\t);",
+      "};",
+      "${1:ComponentName}.propTypes = {",
+      "};"
+    ],
+    "description": "Bootstrap for a functional React component"
+  }
+}

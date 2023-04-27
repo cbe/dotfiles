@@ -1,0 +1,2 @@
+# Ignore environment-related configurations, directory 'includes' is glob-imported from kitty config
+includes/*

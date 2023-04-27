@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+trait :${1:} do
+  ${0:}
+end
+]]></content>
+  <tabTrigger>trait</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>trait-Block</description>
+</snippet>

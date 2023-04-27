@@ -1,0 +1,62 @@
+if type kitty &> /dev/null; then
+  alias ssh='TERM="xterm-256color" ssh'
+fi
+
+# OS specifics
+## Linux specifics
+if ( _is_linux ); then
+  if type xsel &> /dev/null; then
+    # Replicates useful pastebin helper from osx
+    alias pbcopy='xsel --clipboard --input'
+    alias pbpaste='xsel --clipboard --output'
+  fi
+fi
+
+## OSX specifics
+if ( _is_mac ); then
+  # Link emacs on osx
+  if [ -f '/Applications/Emacs.app/Contents/MacOS/Emacs' ]; then
+    alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+  fi
+  if [ -f '/Applications/Emacs.app/Contents/MacOS/bin/emacsclient' ]; then
+    alias emacsclient='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
+  fi
+fi
+
+# Software specifics
+## neovim
+if type nvim &> /dev/null; then
+  alias vi='nvim'
+fi
+
+## exa as `ls` replacement
+if type exa &> /dev/null; then
+  alias l='exa -l'
+fi
+
+## bat as `cat` replacement
+if type bat &> /dev/null; then
+  alias cat='bat'
+fi
+
+# #`fnm` as `nvm` replacement
+if type fnm &> /dev/null; then
+  alias nvm='fnm'
+fi
+
+## VSCodium (Open source variant of 'Visual Studio Code')
+if type code &> /dev/null; then
+  : # Do nothing
+else
+  if type codium &> /dev/null; then
+    # Alias `codium` to `code` but only when `code` itself is not installed
+    alias code='codium'
+  fi
+fi
+
+## Timetracking
+if type timew &> /dev/null; then
+  alias tt='timew'
+  alias tts='timew summary :id :week'
+  alias ttg='timew summary :id :yesterday'
+fi

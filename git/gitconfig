@@ -1,0 +1,26 @@
+[user]
+  name = cbe
+  email = cbe@users.noreply.github.com
+
+[alias]
+  ci = commit
+  sw = switch
+  st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(magenta)(%Creset%Cgreen%cr%Creset, %C(blue)%an%Creset%C(magenta))%Creset' --abbrev-commit --date=relative
+  tags = tag --column
+
+[init]
+  defaultBranch = main
+
+[core]
+  hooksPath = ~/dotfiles/git/hooks
+
+[diff]
+  external = difft
+
+[pull]
+  rebase = false # default pull strategy (merge)
+
+[pager]
+  branch = false
+  tags = false

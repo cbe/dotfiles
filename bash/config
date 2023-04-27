@@ -1,0 +1,24 @@
+# bash
+HISTCONTROL="ignorespace:ignoredups"
+HISTSIZE=50000
+
+# colors for PS1
+BROWN="\e[0;33m"
+COLOR_OFF="\e[00m"
+DARK_GRAY="\e[0;90m"
+DARK_TURQUOISE="\e[0;36m"
+LIGHT_CYAN="\e[1;36m"
+LIGHT_GREEN="\e[1;32m"
+LIGHT_RED="\e[1;31m"
+PURPLE="\e[0;35m"
+YELLOW="\e[1;33m"
+
+# PS1
+# time
+export PS1="\[$DARK_GRAY\][\t]\[$COLOR_OFF\] "
+# user:machine
+PS1+="\[$DARK_TURQUOISE\]\u@\h\[$COLOR_OFF\]: "
+# pwd
+PS1+="\[$BROWN\]\w\[$COLOR_OFF\]\n"
+# prompt
+PS1+="\[$LIGHT_GREEN\]›\[$COLOR_OFF\] "

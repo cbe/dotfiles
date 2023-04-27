@@ -1,0 +1,11 @@
+# Files that keep secrets
+.github-api-token
+
+# Directories where content should not be tracked by version control
+/additional-binaries/*
+
+# Misc
+*.bak
+# MacOS
+Brewfile*.lock.json
+.DS_Store

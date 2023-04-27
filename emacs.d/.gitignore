@@ -1,0 +1,15 @@
+/auto-save
+/backup
+/elpa/*
+/games
+/session.*
+/url
+
+.emacs.desktop*
+.mc-lists.el
+ac-comphist.dat
+auto-save-list
+bookmarks
+ido.last
+places
+url/cache
