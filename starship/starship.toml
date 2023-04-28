@@ -4,7 +4,10 @@ ${custom.symbol}[](fg:rosewater)\
 $username$hostname\
 $directory\
 $git_branch$git_status\
-$time
+$time\
+$fill\
+${custom.right_side}\
+$cmd_duration
 $character
 """
 
@@ -17,35 +20,57 @@ format = "[ $output ]($style)"
 
 [username]
 show_always = true
-style_user = "fg:rosewater"
+style_user = "fg:pink"
 format = "[$user@]($style)"
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "fg:rosewater"
+style = "fg:pink"
 format = "[$hostname ]($style)"
 
 [directory]
-style = "fg:pink"
+style = "fg:yellow"
 format = "[$path ]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "fg:lavender"
+style = "fg:green"
 format = "[$symbol $branch]($style)"
 
 [git_status]
-style = "fg:lavender"
+style = "fg:green"
 format = "[$all_status$ahead_behind ]($style)"
 
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute:Second Format
-style = "fg:sky"
+style = "fg:lavender"
 format = "[$time]($style)"
+
+[fill]
+disabled = false
+symbol = " "
+
+[custom.right_side]
+description = "The fade out effect on the right side"
+when = true
+format = """
+[](fg:surface0)\
+[  ](fg:surface1 bg:surface0)\
+[  ](fg:surface2 bg:surface1)\
+[  ](fg:overlay0 bg:surface2)\
+[  ](fg:overlay1 bg:overlay0)\
+[  ](fg:overlay2 bg:overlay1)\
+[  ](bg:overlay2)"""
+
+[cmd_duration]
+disabled = false
+min_time = 1_000
+format = "[$duration]($style)"
+style = "fg:crust bg:overlay2"
 
 [character]
 success_symbol = "[›](fg:text)"

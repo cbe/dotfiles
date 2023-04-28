@@ -20,7 +20,9 @@ source $ZSH/oh-my-zsh.sh
 # Includes
 source $HOME/dotfiles/zsh/functions # load functions first
 source $HOME/dotfiles/zsh/aliases
-source $HOME/dotfiles/zsh/config
+source $HOME/dotfiles/zsh/prompt
 source $HOME/dotfiles/zsh/env
 
-eval "$(starship init zsh)"
+if type starship &> /dev/null; then
+  eval "$(starship init zsh)"
+fi
