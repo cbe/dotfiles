@@ -1,0 +1,17 @@
+# This file is just a placeholder so zsh doesn't fail globbing files from
+# this directory
+
+# Example completion
+_my_custom_completion () {
+  #compdef custom_completion
+
+  local -a subcmds
+
+  subcmds=(
+    'foo:Description for foo'
+  )
+
+  _describe 'custom_completion' subcmds
+}
+
+compdef _my_custom_completion my-command

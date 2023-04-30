@@ -5,8 +5,6 @@
 
 ## Required packages
 
-- [`oh-my-zsh`](https://github.com/robbyrussell/oh-my-zsh#unattended-install)
-
 ### Linux
 
 ```sh
