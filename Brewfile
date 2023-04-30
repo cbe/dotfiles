@@ -19,6 +19,7 @@ brew "pwgen"
 brew "ripgrep"
 brew "starship"
 brew "tree" # Why u no tree, osx?
+brew "zoxide"
 
 # Casks
 cask_args appdir: "/Applications"

@@ -15,7 +15,8 @@ sudo pacman -S \
   ttf-iosevka-nerd \ # Nerd font is recommended for `starship` prompt
   # ttc-iosevka \    # Optional, see line above
   xsel \             # For copy/pasta 🍝 convenience, see `zsh/aliases`
-  yay
+  yay \
+  zoxide
 sudo yay -S \
   vscodium-bin
 ```

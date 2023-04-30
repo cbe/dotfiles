@@ -6,6 +6,12 @@ source $HOME/dotfiles/zsh/prompt
 source $HOME/dotfiles/zsh/env
 source $HOME/dotfiles/zsh/additional-sources/*
 
+# Initialize starship prompt
 if type starship &> /dev/null; then
   eval "$(starship init zsh)"
+fi
+
+# Initialize zoxide as fuzzy directory finder
+if type zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
 fi
