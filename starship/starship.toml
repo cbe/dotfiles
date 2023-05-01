@@ -13,10 +13,9 @@ $character
 
 [custom.symbol]
 description = "The leading symbol of the prompt"
-command = 'echo '
 when = true
 style = "fg:crust bg:rosewater"
-format = "[ $output ]($style)"
+format = "[  ]($style)"
 
 [username]
 show_always = true
