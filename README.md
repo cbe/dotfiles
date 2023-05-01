@@ -11,6 +11,7 @@
 sudo pacman -S \
   kitty \            # Terminal
   neovim \
+  skim \             # Fuzzy finder
   starship \         # Command line prompt
   ttf-iosevka-nerd \ # Nerd font is recommended for `starship` prompt
   # ttc-iosevka \    # Optional, see line above

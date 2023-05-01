@@ -17,6 +17,7 @@ brew "media-info"
 brew "nvim"
 brew "pwgen"
 brew "ripgrep"
+brew "sk"
 brew "starship"
 brew "tree" # Why u no tree, osx?
 brew "zoxide"

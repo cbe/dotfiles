@@ -4,6 +4,11 @@ if type starship &> /dev/null; then
   export STARSHIP_CONFIG="$HOME/dotfiles/starship/starship.toml"
 fi
 
+# Configure bat (as cat replacement)
+if type bat &> /dev/null; then
+  export BAT_THEME=base16
+fi
+
 if type nvim &> /dev/null; then
   export EDITOR=nvim
 else
@@ -37,14 +42,22 @@ if ( _is_mac ); then
   fi
 fi
 
+# skim [1] fuzzy finder (alternative to fzf [2])
+# [1] https://github.com/lotabout/skim
+# [2] https://github.com/junegunn/fzf
+if type sk &> /dev/null; then
+  if ( _is_linux ); then
+    source /usr/share/skim/completion.zsh
+    source /usr/share/skim/key-bindings.zsh
+  elif ( _is_mac ); then
+    source "$(brew --prefix)/opt/sk/share/zsh/site-functions/completion.zsh"
+    source "$(brew --prefix)/opt/sk/share/zsh/site-functions/key-bindings.zsh"
+  fi
+fi
+
 # Configure fnm to switch node version upon entering a directory
 if type fnm &> /dev/null; then
   eval "$(fnm env --use-on-cd)"
-fi
-
-# Configure bat (as cat replacement)
-if type bat &> /dev/null; then
-  export BAT_THEME=base16
 fi
 
 # Configure rvm
