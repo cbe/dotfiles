@@ -4,7 +4,10 @@ source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/config
 source $HOME/dotfiles/zsh/prompt
 source $HOME/dotfiles/zsh/env
-source $HOME/dotfiles/zsh/additional-sources/*
+
+for FILE in $HOME/dotfiles/zsh/additional-sources/*; do
+  source $FILE
+done
 
 # Initialize starship prompt
 if type starship &> /dev/null; then

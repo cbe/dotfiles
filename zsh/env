@@ -17,10 +17,10 @@ fi
 
 if ( _is_mac ); then
   if type brew &> /dev/null; then
-    if [ ! -f '.github-api-token' ]; then
+    if [ ! -f "$HOME/dotfiles/.github-api-token" ]; then
       echo ⚠️ Warning: no API token for GitHub found, which is required for smooth brew operations
     else
-      export HOMEBREW_GITHUB_API_TOKEN=$(cat .github-api-token)
+      export HOMEBREW_GITHUB_API_TOKEN=$(cat "$HOME/dotfiles/.github-api-token")
     fi
 
     # also required by Homebrew thus we do it here

@@ -12,7 +12,9 @@ bindkey -M emacs '^[[3;5~' kill-word # Use `Ctrl` + `V` `Ctrl` + `Del` in termin
 
 # Colors
 ## Define LS_COLORS for further usage
-eval "$(dircolors)"
+if type dircolors &> /dev/null; then
+  eval "$(dircolors)"
+fi
 
 # Completion
 ## Should be called before compinit
