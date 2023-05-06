@@ -17,6 +17,9 @@ if type dircolors &> /dev/null; then
 fi
 
 # Completion
+## Include additional completions
+fpath=($HOME/dotfiles/zsh/completions $fpath)
+
 ## Should be called before compinit
 zmodload zsh/complist
 ## Bind keys to cycle throught previous subcommands/arguments
