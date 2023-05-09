@@ -7,6 +7,7 @@
   "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Hack, Menlo, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
+  "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.guides.bracketPairs": false,
   "editor.hover.delay": 1000,
