@@ -1,6 +1,6 @@
 palette = "catppuccin_frappe"
 format = """
-${custom.symbol}[](fg:rosewater)\
+${custom.symbol}\
 $username$hostname\
 $directory\
 $git_branch$git_status\
@@ -15,7 +15,7 @@ $character
 description = "The leading symbol of the prompt"
 when = true
 style = "fg:crust bg:rosewater"
-format = "[  ]($style)"
+format = "[  ]($style)[](fg:rosewater)"
 
 [username]
 show_always = true
