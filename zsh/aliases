@@ -6,15 +6,20 @@ fi
 ## Linux specifics
 if ( _is_linux ); then
   if type xsel &> /dev/null; then
-    # Replicates useful pastebin helper from osx
+    # Replicates useful pastebin helper from macOS
     alias pbcopy='xsel --clipboard --input'
     alias pbpaste='xsel --clipboard --output'
   fi
+
+  if type xdg-open &> /dev/null; then
+    # Replicates 'open' helper from macOS
+    alias open='xdg-open'
+  fi
 fi
 
-## OSX specifics
+## macOS specifics
 if ( _is_mac ); then
-  # Link emacs on osx
+  # Link emacs on macOS
   if [ -f '/Applications/Emacs.app/Contents/MacOS/Emacs' ]; then
     alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
   fi
