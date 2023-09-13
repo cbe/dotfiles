@@ -47,7 +47,7 @@ fi
 # [2] https://github.com/junegunn/fzf
 if type sk &> /dev/null; then
   if ( _is_linux ); then
-    source /usr/share/skim/completion.zsh
+    # source /usr/share/skim/completion.zsh # Seems to be gone since 0.10.4
     source /usr/share/skim/key-bindings.zsh
   elif ( _is_mac ); then
     source "$(brew --prefix)/opt/sk/share/zsh/site-functions/completion.zsh"
