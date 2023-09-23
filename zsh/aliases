@@ -34,9 +34,9 @@ if type nvim &> /dev/null; then
   alias vi='nvim'
 fi
 
-## exa as `ls` replacement
-if type exa &> /dev/null; then
-  alias l='exa -l'
+## eza as `ls` replacement
+if type eza &> /dev/null; then
+  alias l='eza -l'
 fi
 
 ## bat as `cat` replacement

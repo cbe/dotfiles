@@ -1,7 +1,7 @@
 # dotfiles 📜
 
-| ℹ️ | This repository is expected to be cloned to $HOME/dotfiles |
-| - | :--------------------------------------------------------- |
+| ℹ️  | This repository is expected to be cloned to $HOME/dotfiles |
+| --- | :--------------------------------------------------------- |
 
 ## Required packages
 
@@ -9,6 +9,7 @@
 
 ```sh
 sudo pacman -S \
+  eza \              # eza is an ls replacement
   kitty \            # Terminal
   neovim \
   skim \             # Fuzzy finder
@@ -56,6 +57,7 @@ cat ~/dotfiles/vscodium/extensions.txt | xargs -L 1 code --install-extension
 # This previous list can be generated and kept up to date by running
 code --list-extensions > ~/dotfiles/vscodium/extensions.txt
 ```
+
 See also: https://www.elliotdenolf.com/posts/backup-restore-vs-code-extensions
 
 ### [yarn](https://yarnpkg.com/getting-started/install)

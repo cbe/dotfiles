@@ -8,7 +8,7 @@ tap "homebrew/services"
 
 # Packages
 brew "difftastic"
-brew "exa"
+brew "eza"
 brew "git"
 brew "imagemagick"
 brew "jd"
