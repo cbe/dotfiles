@@ -8,6 +8,7 @@
   st = status
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(magenta)(%Creset%Cgreen%cr%Creset, %C(blue)%an%Creset%C(magenta))%Creset' --abbrev-commit --date=relative
   tags = tag --column
+  sh = show --ext-diff
 
 [init]
   defaultBranch = main
@@ -17,6 +18,7 @@
 
 [diff]
   external = difft
+  tool = difft
 
 [pull]
   rebase = false # default pull strategy (merge)
@@ -24,3 +26,4 @@
 [pager]
   branch = false
   tags = false
+  difftool = true
