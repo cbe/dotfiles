@@ -17,6 +17,10 @@ if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/nvim/init.vim' to dotfiles?")
   ln -sf ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim
 fi
 
+if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/starship.toml' to dotfiles?") ]]; then
+  ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
+fi
+
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/kitty' to dotfiles?") ]]; then
   ln -sfn ~/dotfiles/kitty ~/.config/kitty
 fi
