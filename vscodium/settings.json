@@ -45,7 +45,7 @@
   "terminal.integrated.tabs.enabled": false,
   "window.zoomLevel": 0.7,
   "workbench.colorTheme": "Catppuccin Frappé",
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none"
 }
