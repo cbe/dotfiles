@@ -2,6 +2,7 @@
 source $HOME/dotfiles/zsh/functions # load functions first
 source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/config
+source $HOME/dotfiles/zsh/keybindings
 source $HOME/dotfiles/zsh/prompt
 source $HOME/dotfiles/zsh/env
 
