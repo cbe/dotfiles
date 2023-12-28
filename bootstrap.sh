@@ -5,6 +5,10 @@ if [[ "yes" == $(ask_yes_or_no "Symlink '~/.zshrc' to dotfiles?") ]]; then
   ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 fi
 
+if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/fish' to dotfiles?") ]]; then
+  ln -sf ~/dotfiles/fish ~/.config/fish
+fi
+
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.gitconfig' to dotfiles?") ]]; then
   if [[ "yes" == $(ask_yes_or_no "Regarding '~/.gitconfig', are you at work?") ]]; then
     ln -sf ~/dotfiles/git/gitconfig-work ~/.gitconfig
@@ -15,10 +19,6 @@ fi
 
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/nvim/init.vim' to dotfiles?") ]]; then
   ln -sf ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim
-fi
-
-if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/starship.toml' to dotfiles?") ]]; then
-  ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 fi
 
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/kitty' to dotfiles?") ]]; then

@@ -8,8 +8,9 @@
 ### Linux
 
 ```sh
-sudo pacman -S \
+pacman -S \
   eza \              # eza is an ls replacement
+  fish \             # fish-shell
   kitty \            # Terminal
   neovim \
   skim \             # Fuzzy finder
@@ -19,7 +20,7 @@ sudo pacman -S \
   xsel \             # For copy/pasta 🍝 convenience, see `zsh/aliases`
   yay \
   zoxide
-sudo yay -S \
+yay -S \
   vscodium-bin
 ```
 
@@ -70,8 +71,6 @@ corepack enable
 
 ### Sublime Text 3
 
-Since I no longer use it I don't need it in the [Bootstrap Script](#Bootstrap-script)
-
 #### Linux
 
 ```
@@ -84,7 +83,7 @@ ln -s ~/dotfiles/sublime/packages/user/ ~/.config/sublime-text-3/Packages/User
 ln -s ~/dotfiles/sublime/packages/user/ ~/Library/Application Support/Sublime Text 3/Packages/User/
 ```
 
-### MacOS
+### macOS
 
 #### Command Line Tools
 
