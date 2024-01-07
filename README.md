@@ -15,8 +15,7 @@ pacman -S \
   neovim \
   skim \             # Fuzzy finder
   starship \         # Command line prompt
-  ttf-iosevka-nerd \ # Nerd font is recommended for `starship` prompt
-  # ttc-iosevka \    # Optional, see line above
+  ttc-iosevka \      # Main monospaced font
   xsel \             # For copy/pasta 🍝 convenience, see `zsh/aliases`
   yay \
   zoxide

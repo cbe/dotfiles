@@ -4,7 +4,7 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 2,
   "editor.dragAndDrop": false,
-  "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Hack, Menlo, monospace",
+  "editor.fontFamily": "Iosevka, Hack, Menlo, monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.formatOnSave": true,

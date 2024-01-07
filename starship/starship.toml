@@ -15,7 +15,7 @@ $character
 description = "The leading symbol of the prompt"
 when = true
 style = "fg:crust bg:rosewater"
-format = "[  ]($style)[](fg:rosewater)"
+format = "[ ]($style)[](fg:rosewater)"
 
 [username]
 show_always = true
@@ -35,9 +35,8 @@ truncation_length = 4
 truncation_symbol = "…/"
 
 [git_branch]
-symbol = ""
 style = "fg:green"
-format = "[$symbol $branch]($style)"
+format = "[$symbol$branch]($style)"
 
 [git_status]
 style = "fg:green"
