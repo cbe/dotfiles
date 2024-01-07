@@ -1,6 +1,5 @@
 palette = "catppuccin_frappe"
 format = """
-${custom.symbol}\
 $username$hostname\
 $directory\
 $git_branch$git_status\
@@ -11,42 +10,36 @@ $cmd_duration
 $character
 """
 
-[custom.symbol]
-description = "The leading symbol of the prompt"
-when = true
-style = "fg:crust bg:rosewater"
-format = "[ ]($style)[](fg:rosewater)"
-
 [username]
 show_always = true
-style_user = "fg:pink"
-format = "[$user@]($style)"
+style_user = "fg:base bg:pink"
+format = "[ $user@]($style)"
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "fg:pink"
-format = "[$hostname ]($style)"
+style = "fg:base bg:pink"
+format = "[$hostname ]($style)[](fg:pink bg:crust)"
 
 [directory]
-style = "fg:yellow"
-format = "[$path ]($style)"
+style = "fg:yellow bg:crust"
+format = "[ $path ]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 
 [git_branch]
-style = "fg:green"
-format = "[$symbol$branch]($style)"
+style = "fg:base bg:green"
+format = "[](fg:crust bg:green)[ $symbol$branch]($style)"
 
 [git_status]
-style = "fg:green"
-format = "[$all_status$ahead_behind ]($style)"
+style = "fg:base bg:green"
+format = "[$all_status$ahead_behind ]($style)[](fg:green bg:crust)"
 
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute:Second Format
-style = "fg:lavender"
-format = "[$time]($style)"
+style = "fg:sapphire bg:crust"
+format = "[ $time ]($style)[](fg:crust)"
 
 [fill]
 disabled = false
