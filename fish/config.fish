@@ -51,6 +51,8 @@ if status is-interactive
     end
 
     ## Initializations
+    # Untracked functions
+    set -a fish_function_path $HOME/dotfiles/fish/additional
 
     # starship prompt
     if _has_program starship
