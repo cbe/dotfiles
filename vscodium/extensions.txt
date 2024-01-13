@@ -1,5 +1,6 @@
 astro-build.astro-vscode
 bbenoist.Nix
+bmalehorn.vscode-fish
 bungcip.better-toml
 Catppuccin.catppuccin-vsc
 coolbear.systemd-unit-file
