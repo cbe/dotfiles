@@ -12,34 +12,34 @@ $character
 
 [username]
 show_always = true
-style_user = "fg:base bg:pink"
+style_user = "fg:darker_bg bg:primary"
 format = "[ $user@]($style)"
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "fg:base bg:pink"
-format = "[$hostname ]($style)[](fg:pink bg:crust)"
+style = "fg:darker_bg bg:primary"
+format = "[$hostname ]($style)[](fg:primary bg:darker_bg)"
 
 [directory]
-style = "fg:yellow bg:crust"
+style = "fg:secondary bg:darker_bg"
 format = "[ $path ]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 
 [git_branch]
-style = "fg:base bg:green"
-format = "[](fg:crust bg:green)[ $symbol$branch]($style)"
+style = "fg:darker_bg bg:tertiary"
+format = "[ $symbol$branch]($style)"
 
 [git_status]
-style = "fg:base bg:green"
-format = "[$all_status$ahead_behind ]($style)[](fg:green bg:crust)"
+style = "fg:darker_bg bg:tertiary"
+format = "[$all_status$ahead_behind ]($style)[](fg:tertiary bg:darker_bg)"
 
 [time]
 disabled = false
 time_format = "%T" # Hour:Minute:Second Format
-style = "fg:sapphire bg:crust"
-format = "[ $time ]($style)[](fg:crust)"
+style = "fg:quaternary bg:darker_bg"
+format = "[ $time ]($style)[](fg:darker_bg)"
 
 [fill]
 disabled = false
@@ -61,36 +61,24 @@ format = """
 disabled = false
 min_time = 1_000
 format = "[$duration]($style)"
-style = "fg:crust bg:overlay2"
+style = "fg:darker_bg bg:overlay2"
 
 [character]
 success_symbol = "[›](fg:text)"
 error_symbol = "[⨯](fg:red)"
 
 [palettes.catppuccin_frappe]
-rosewater = "#f2d5cf"
-flamingo = "#eebebe"
-pink = "#f4b8e4"
-mauve = "#ca9ee6"
-red = "#e78284"
-maroon = "#ea999c"
-peach = "#ef9f76"
-yellow = "#e5c890"
-green = "#a6d189"
-teal = "#81c8be"
-sky = "#99d1db"
-sapphire = "#85c1dc"
-blue = "#8caaee"
-lavender = "#babbf1"
-text = "#c6d0f5"
-subtext1 = "#b5bfe2"
-subtext0 = "#a5adce"
-overlay2 = "#949cbb"
-overlay1 = "#838ba7"
-overlay0 = "#737994"
-surface2 = "#626880"
-surface1 = "#51576d"
-surface0 = "#414559"
-base = "#303446"
-mantle = "#292c3c"
-crust = "#232634"
+primary = "#f4b8e4" # pink
+secondary = "#e5c890" # yellow
+tertiary = "#a6d189" # green
+quaternary = "#85c1dc" # sapphire
+red = "#e78284" # red
+text = "#c6d0f5" # text
+overlay2 = "#949cbb" # overlay2
+overlay1 = "#838ba7" # overlay1
+overlay0 = "#737994" # overlay0
+surface2 = "#626880" # surface2
+surface1 = "#51576d" # surface1
+surface0 = "#414559" # surface0
+main_bg = "#303446" # base
+darker_bg = "#232634" # crust
