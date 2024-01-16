@@ -2,7 +2,7 @@ palette = "catppuccin_frappe"
 format = """
 $username$hostname\
 $directory\
-$git_branch$git_status\
+$git_branch$git_commit$git_status\
 $time\
 $fill\
 ${custom.right_side}\
@@ -30,6 +30,10 @@ truncation_symbol = "…/"
 [git_branch]
 style = "fg:darker_bg bg:tertiary"
 format = "[ $symbol$branch]($style)"
+
+[git_commit]
+style = "fg:darker_bg bg:tertiary"
+format = "[ $hash]($style)"
 
 [git_status]
 style = "fg:darker_bg bg:tertiary"
