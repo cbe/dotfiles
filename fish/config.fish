@@ -86,6 +86,7 @@ if status is-interactive
 
     if _is_mac
         fish_add_path /opt/homebrew/bin
+        fish_add_path /opt/homebrew/sbin
 
         if test ! -f "$HOME/dotfiles/.github-api-token"
             echo ⚠️ Warning: no API token for GitHub found, which is required for smooth brew operations
