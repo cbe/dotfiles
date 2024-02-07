@@ -1,4 +1,6 @@
 {
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "debug.console.fontFamily": "Iosevka, Hack, Menlo, monospace",
   "debug.console.fontSize": 16,
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
