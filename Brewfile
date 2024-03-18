@@ -19,7 +19,6 @@ brew "pwgen"
 brew "ripgrep"
 brew "sk"
 brew "starship"
-brew "tree" # Why u no tree, osx?
 brew "zoxide"
 
 # Casks
