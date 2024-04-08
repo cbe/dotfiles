@@ -4,6 +4,7 @@
   { "key": "ctrl+-", "command": "-workbench.action.zoomOut" },
   { "key": "cmd+-", "command": "-workbench.action.zoomOut" },
   { "key": "cmd+=", "command": "-workbench.action.zoomIn" },
+  { "key": "ctrl+-", "command": "workbench.action.navigateBack" },
   { "key": "ctrl+=", "command": "workbench.action.navigateForward" },
   { "key": "ctrl+tab", "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup" },
   { "key": "ctrl+tab", "command": "workbench.action.nextEditor" },
