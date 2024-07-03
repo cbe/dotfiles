@@ -7,11 +7,11 @@ function __fish_timew_get_commands
 end
 
 function __fish_timew_get_tags
-    timew tags | tail -n+4 | string trim --right -c - | string trim --right
+    timew tags | tail -n+4 | awk '{ sub(/-$/, ""); print }' | awk '!/^[[:space:]]*$/' | awk '{$1=$1};1' | awk '{ print "\'"$0"\'"}'
 end
 
 function __fish_timew_get_ids
-    timew summary :ids year | sed -e 's/.*@\([0-9]\+\).*/@\1/g;tx;d;:x'
+    timew summary :ids | sed -e 's/.*@\([0-9]\+\).*/@\1/g;tx;d;:x'
 end
 
 function __fish_timew_get_reports
@@ -27,9 +27,6 @@ end
 #        [for] <duration>
 # timew show | sed -n '/\s\s.*:/p'
 
-complete -c timew -f
-complete -c timew -l version -d 'Print a short version string and exit'
-
 set -l commands (__fish_timew_get_commands)
 set -l reports (__fish_timew_get_reports)
 set -l ids (__fish_timew_get_ids)
@@ -39,26 +36,33 @@ set -l durations ""
 set -l dates ""
 set -l start_end "start end"
 
+
+complete -c timew -f
+
+complete -c timew -l version -d 'Print a short version string and exit'
+
 set -l commands_with_description "
-annotate\t'Add an annotation to intervals'
 cancel\t'Cancel time tracking'
+diagnostics\t'Show diagnostic information'
+extensions\t'List available extensions'
+show\t 'Display configuration'
+undo\t'Revert Timewarrior commands'
+annotate\t'Add an annotation to intervals'
 config\t'Get and set Timewarrior configuration'
-continue\t'Resume tracking of existing interval or tag'
+continue\t'Resume tracking of existing interval'
 day\t'Display chart report'
 delete\t'Delete intervals'
-diagnostics\t'Show diagnostic information'
 export\t'Export tracked time in JSON'
-extensions\t'List available extensions'
 gaps\t'Display time tracking gaps'
 get\t'Display DOM values'
 help\t'Display help'
+week\t'Display chart report'
 join\t'Join intervals'
 lengthen\t'Lengthen intervals'
 modify\t'Change start or end date of an interval'
 month\t'Display chart report'
 move\t'Change interval start-time'
 shorten\t'Shorten intervals'
-show\t'Display configuration'
 split\t'Split intervals'
 start\t'Start time tracking'
 stop\t'Stop time tracking'
@@ -66,7 +70,6 @@ summary\t'Display a time-tracking summary'
 tag\t'Add tags to intervals'
 tags\t'Display a list of tags'
 track\t'Add intervals to the database'
-undo\t'Revert Timewarrior commands'
 untag\t'Remove tags from intervals'
 week\t'Display chart report'
 "
@@ -76,7 +79,14 @@ complete -c timew -n "not __fish_seen_subcommand_from $commands" \
     -a "$commands_with_description" \
     -d "Timewarrior command"
 
+
+complete -c timew -n "not __fish_seen_subcommand_from $commands" \
+    -a "$reports" \
+    -d Report
+
+
 # Subcomands
+
 complete -c timew -n "__fish_seen_subcommand_from annotate" \
     -a "$ids"
 # @<id> [@<id> ...] <annotation>
@@ -86,7 +96,7 @@ complete -c timew -n "__fish_seen_subcommand_from config" \
 #[<name> [<value> | '']]
 
 complete -c timew -n "__fish_seen_subcommand_from continue" \
-    -a "$ids $tags"
+    -a "$ids"
 #[@<id>] [<date>|<interval>]
 
 complete -c timew -n "__fish_seen_subcommand_from day" \
@@ -125,6 +135,7 @@ complete -c timew -n "__fish_seen_subcommand_from modify && __fish_seen_subcomma
     -a "$ids"
 # (start|end) @<id> <date>
 
+
 complete -c timew -n "__fish_seen_subcommand_from month" \
     -a "$tags"
 # [<interval>] [<tag> ...]
@@ -132,6 +143,10 @@ complete -c timew -n "__fish_seen_subcommand_from month" \
 complete -c timew -n "__fish_seen_subcommand_from move" \
     -a "$ids"
 # @<id> <date>
+
+complete -c timew -n "__fish_seen_subcommand_from $reports" \
+    -a "$tags $interval"
+# <report> [<interval>] [<tag> ...]
 
 complete -c timew -n "__fish_seen_subcommand_from shorten" \
     -a "$ids"
