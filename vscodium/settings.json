@@ -22,7 +22,7 @@
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 15,
   "files.associations": {
-    "*.html": "html"
+    "*.html": "superhtml"
   },
   "files.exclude": {
     "**/.git": false
@@ -60,5 +60,9 @@
   },
   "[javascript][typescript][javascriptreact][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[superhtml]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "LorisCro.super"
   }
 }

@@ -1,11 +1,12 @@
 astro-build.astro-vscode
-bbenoist.Nix
+bbenoist.nix
 bmalehorn.vscode-fish
 bungcip.better-toml
-Catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc
 coolbear.systemd-unit-file
 dbaeumer.vscode-eslint
 eamodio.gitlens
-EditorConfig.EditorConfig
+editorconfig.editorconfig
 esbenp.prettier-vscode
+loriscro.super
 mikestead.dotenv
