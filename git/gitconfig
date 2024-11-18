@@ -23,6 +23,9 @@
 [pull]
   rebase = false # default pull strategy (merge)
 
+[rebase]
+  autoStash = true
+
 [pager]
   branch = false
   tags = false
