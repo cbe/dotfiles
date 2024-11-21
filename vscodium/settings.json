@@ -30,14 +30,12 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "never",
-  "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.alignment": "left",
   "gitlens.statusBar.format": "${author}, ${message}, ${agoOrDate}",
   "javascript.preferences.importModuleSpecifierEnding": "js",
-  "liveshare.guestApprovalRequired": true,
   "search.exclude": {
     ".git": true
   },
