@@ -4,6 +4,7 @@
   "debug.console.fontSize": 16,
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 999,
   "editor.cursorWidth": 2,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Iosevka, Hack, Menlo, monospace",

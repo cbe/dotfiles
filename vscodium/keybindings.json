@@ -32,6 +32,10 @@
   { "key": "ctrl+shift+left", "command": "workbench.action.terminal.resizePaneLeft", "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported" },
   { "key": "ctrl+shift+right", "command": "workbench.action.terminal.resizePaneRight", "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported" },
 
+  // Scrolling
+  { "key": "alt+pageup", "command": "scrollPageUp", "when": "textInputFocus" },
+  { "key": "alt+pagedown", "command": "scrollPageDown", "when": "textInputFocus" },
+
   // Line operations
   { "key": "ctrl+l", "command": "editor.action.joinLines", "when": "editorTextFocus" },
   { "key": "ctrl+e", "command": "cursorEnd", "when": "textInputFocus" },
