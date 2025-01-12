@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: describe
-# key: describe
-# group: spec
-# --
-describe("${1:description}", () => {
-  $0
-});

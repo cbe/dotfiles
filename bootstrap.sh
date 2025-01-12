@@ -43,7 +43,3 @@ fi
 if [[ "yes" == $(ask_yes_or_no "Install VSCodium extensions?") ]]; then
   cat ~/dotfiles/vscodium/extensions.txt | xargs -L 1 codium --install-extension &> /dev/null
 fi
-
-if [[ "yes" == $(ask_yes_or_no "Symlink '~/.emacs.d' to dotfiles?") ]]; then
-  ln -sfn ~/dotfiles/emacs.d ~/.emacs.d
-fi
