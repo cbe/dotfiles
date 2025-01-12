@@ -1,6 +1,0 @@
-<snippet>
-  <content><![CDATA[const ${1:} = require("${0:}");]]></content>
-  <tabTrigger>require</tabTrigger>
-  <scope>source.js</scope>
-  <description>require for CommonJS</description>
-</snippet>

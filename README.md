@@ -68,20 +68,6 @@ corepack enable
 
 ## Optional/deprecated symlinks
 
-### Sublime Text 3
-
-#### Linux
-
-```
-ln -s ~/dotfiles/sublime/packages/user/ ~/.config/sublime-text-3/Packages/User
-```
-
-#### MacOS
-
-```
-ln -s ~/dotfiles/sublime/packages/user/ ~/Library/Application Support/Sublime Text 3/Packages/User/
-```
-
 ### macOS
 
 #### Command Line Tools

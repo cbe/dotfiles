@@ -1,8 +1,0 @@
-{
-  "all": {
-    "indent_size": 2
-  },
-  "json": {
-    "brace_style": "end-expand"
-  }
-}
