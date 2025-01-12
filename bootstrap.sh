@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-source ./zsh/functions
 
-if [[ "yes" == $(ask_yes_or_no "Symlink '~/.zshrc' to dotfiles?") ]]; then
-  ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
-fi
+# https://stackoverflow.com/a/17695543
+function ask_yes_or_no() {
+  read -p "$1 ([y]es or [N]o): "
+  case $(echo $REPLY | tr '[A-Z]' '[a-z]') in
+    y|yes) echo "yes" ;;
+    *)     echo "no" ;;
+  esac
+}
 
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/fish' to dotfiles?") ]]; then
   ln -sf ~/dotfiles/fish ~/.config/fish
