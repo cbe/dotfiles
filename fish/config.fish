@@ -18,8 +18,18 @@ bind \cQ suppress-autosuggestion # Ctrl + Q
 # Neovim
 if _has_program nvim
     set -gx EDITOR nvim
+
     alias vi='nvim'
     alias vim='nvim'
+end
+
+# helix editor
+if _has_program helix
+    alias hx='helix'
+    set -gx EDITOR helix
+else if _has_program hx
+    alias helix='hx'
+    set -gx EDITOR hx
 end
 
 # eza as `ls` replacement

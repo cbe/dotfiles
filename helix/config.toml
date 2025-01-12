@@ -1,0 +1,18 @@
+theme = "catppuccin_frappe"
+
+[editor]
+scrolloff = 999
+cursorline = true
+color-modes = true
+insert-final-newline = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true

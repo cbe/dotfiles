@@ -21,6 +21,10 @@ if [[ "yes" == $(ask_yes_or_no "Symlink '~/.gitconfig' to dotfiles?") ]]; then
   fi
 fi
 
+if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/helix/' to dotfiles?") ]]; then
+  ln -sf ~/dotfiles/helix/ ~/.config/helix
+fi
+
 if [[ "yes" == $(ask_yes_or_no "Symlink '~/.config/nvim/init.vim' to dotfiles?") ]]; then
   ln -sf ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim
 fi

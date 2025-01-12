@@ -1,6 +1,6 @@
 # dotfiles 📜
 
-| ℹ️  | This repository is expected to be cloned to $HOME/dotfiles |
+| ℹ️   | This repository is expected to be cloned to $HOME/dotfiles |
 | --- | :--------------------------------------------------------- |
 
 ## Required packages
@@ -13,10 +13,11 @@ pacman -S \
   fish \             # fish-shell
   kitty \            # Terminal
   neovim \
+  helix \
   skim \             # Fuzzy finder
   starship \         # Command line prompt
   ttc-iosevka \      # Main monospaced font
-  xsel \             # For copy/pasta 🍝 convenience, see `zsh/aliases`
+  xsel \             # For copy/pasta 🍝 convenience, see `fish/config.fish`
   yay \
   zoxide
 yay -S \
@@ -34,6 +35,19 @@ cp .github-api-token.example .github.api-token
 
 # Install dependencies
 brew bundle
+```
+
+### Recommended packages
+
+#### Linux
+
+```sh
+pacman -S \
+  typescript-language-server \      # helix editor
+  vscode-css-language-server        # helix editor
+
+yay -S \
+  superhtml                         # helix editor
 ```
 
 ## Bootstrap script
