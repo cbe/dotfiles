@@ -25,7 +25,7 @@ end
 # eza as `ls` replacement
 if _has_program eza
     alias l='eza -l'
-    alias t='eza --tree --all --long'
+    alias t='eza --tree --all --long --ignore-glob .git'
 end
 
 # bat as `cat` replacement
