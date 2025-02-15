@@ -1,9 +1,12 @@
 [
   // Workspace
   { "key": "ctrl+=", "command": "-workbench.action.zoomIn" },
-  { "key": "ctrl+-", "command": "-workbench.action.zoomOut" },
-  { "key": "cmd+-", "command": "-workbench.action.zoomOut" },
+  { "key": "ctrl+shift+=", "command": "-workbench.action.zoomIn" },
+  { "key": "ctrl+numpad_add", "command": "-workbench.action.zoomIn" },
   { "key": "cmd+=", "command": "-workbench.action.zoomIn" },
+  { "key": "ctrl+-", "command": "-workbench.action.zoomOut" },
+  { "key": "ctrl+numpad_subtract", "command": "-workbench.action.zoomOut" },
+  { "key": "cmd+-", "command": "-workbench.action.zoomOut" },
   { "key": "ctrl+i", "command": "workbench.action.navigateBack" },
   { "key": "ctrl+o", "command": "workbench.action.navigateForward" },
   { "key": "ctrl+tab", "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup" },
