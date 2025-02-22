@@ -52,10 +52,10 @@ yay -S \
 
 ## Bootstrap script
 
-This will help preparing symlinks for various tools as well as some basic configurations, nothing too fancy here.
+This will help preparing symlinks for various tools as well as some basic configurations, nothing too fancy here. Requires [`fish`](https://fishshell.com/) shell.
 
 ```sh
-./bootstrap.sh
+./bootstrap.fish
 ```
 
 ## Other configurations
