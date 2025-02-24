@@ -88,5 +88,22 @@
   { "key": "ctrl+shift+left", "command": "-editor.action.smartSelect.shrink", "when": "editorTextFocus" },
   { "key": "ctrl+shift+meta+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
   { "key": "ctrl+shift+alt+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus && isMac" },
-  { "key": "ctrl+shift+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus" }
+  { "key": "ctrl+shift+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus" },
+
+  // macOS
+  {
+    "key": "cmd+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat2.start",
+    "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && !inlineChatHasSession"
+  }
 ]
