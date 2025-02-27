@@ -1,4 +1,8 @@
 [
+  // Panes
+  { "key": "cmd+shift+r", "command": "workbench.view.extension.references-view", "when": "isMac" },
+  { "key": "ctrl+shift+r", "command": "workbench.view.extension.references-view", "when": "!isMac" },
+
   // Workspace
   { "key": "ctrl+=", "command": "-workbench.action.zoomIn" },
   { "key": "ctrl+shift+=", "command": "-workbench.action.zoomIn" },
