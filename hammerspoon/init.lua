@@ -1,12 +1,14 @@
 hyper_chord = { "cmd", "alt", "ctrl", "shift" }
 shortcuts = {
   { chord = hyper_chord, key = "q", app = "Finder" },
+  { chord = hyper_chord, key = "w", app = "bitwarden.app" },
+  { chord = hyper_chord, key = "e", app = "Slack" },
+  { chord = hyper_chord, key = "r", app = "Obsidian" },
   { chord = hyper_chord, key = "a", app = "Firefox" },
   { chord = hyper_chord, key = "s", app = "kitty" },
   { chord = hyper_chord, key = "d", app = "Visual Studio Code" },
   { chord = hyper_chord, key = "f", app = "Chromium" },
-  { chord = hyper_chord, key = "r", app = "Obsidian" },
-  { chord = hyper_chord, key = "e", app = "Slack" },
+  { chord = hyper_chord, key = "g", app = "Windows App" },
 }
 
 -- Application shortcuts
