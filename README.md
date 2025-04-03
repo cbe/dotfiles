@@ -26,6 +26,8 @@ yay -S \
 
 ### MacOS
 
+#### Brew setup
+
 ```sh
 # Configure GitHub API token for brew to run smoothly
 cp .github-api-token.example .github.api-token
