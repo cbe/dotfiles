@@ -23,7 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CHORDAL_HOLD
 #define OLED_TIMEOUT 10000
 #define PERMISSIVE_HOLD
-#define SPLIT_WPM_ENABLE
 #define TAPPING_TERM 220
 
 // Custom keycodes to keep keymap a little less cluttered, see:
