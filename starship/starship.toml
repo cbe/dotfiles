@@ -86,3 +86,35 @@ surface1 = "#51576d" # surface1
 surface0 = "#414559" # surface0
 main_bg = "#303446" # base
 darker_bg = "#232634" # crust
+
+[palettes.rosepine_moon]
+primary = "#c4a7e7" # iris
+secondary = "#f6c177" # gold
+tertiary = "#ea9a97" # rose
+quaternary = "#3e8fb0" # pine
+red = "#eb6f92" # love
+text = "#e0def4" # text
+overlay2 = "#56526e" # highlight high
+overlay1 = "#44415a" # highlight med
+overlay0 = "#393552" # overlay
+surface2 = "#34304c" # surface - lighter
+surface1 = "#2f2c45" # surface - light
+surface0 = "#2a273f" # surface
+main_bg = "#232136" # base
+darker_bg = "#11101b" # crust
+
+[palettes.nord]
+primary = "#8fbcbb"
+secondary = "#81a1c1"
+tertiary = "#ebcb8b"
+quaternary = "#b48ead"
+red = "#bf616a"
+text = "#d8dee9"
+overlay2 = "#eceff4"
+overlay1 = "#e5e9f0"
+overlay0 = "#4c566a"
+surface2 = "#495366"
+surface1 = "#464f62"
+surface0 = "#434c5e"
+main_bg = "#3b4252"
+darker_bg = "#2e3440"
