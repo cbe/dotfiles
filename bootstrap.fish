@@ -50,7 +50,7 @@ if _is_mac
         ln -sfn ~/dotfiles/hammerspoon ~/.hammerspoon
     end
 
-    if ask_yes_or_no "Symlink '~/.amethyst' to dotfiles"
+    if ask_yes_or_no "Symlink '~/.amethyst' to dotfiles?"
         ln -sfn ~/dotfiles/amethyst/amethyst.yml ~/.amethyst.yml
     end
 end
