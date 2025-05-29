@@ -43,6 +43,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HR2_RHY ALL_T(KC_U)
 #define HR2_RME MEH_T(KC_I)
 #define HR2_RRA RALT_T(KC_O)
+// Hands Down Neu
+// Home Row Mods Row 3
+#define HD3_LGU LGUI_T(KC_R)
+#define HD3_LLA LALT_T(KC_S)
+#define HD3_LCT LCTL_T(KC_N)
+#define HD3_LSH LSFT_T(KC_T)
+#define HD3_RSH RSFT_T(KC_A)
+#define HD3_RCT RCTL_T(KC_E)
+#define HD3_RLA LALT_T(KC_I)
+#define HD3_RGU RGUI_T(KC_H)
+// Home Row Mods Row Row 2
+#define HD2_LRA RALT_T(KC_F)
+#define HD2_LME MEH_T(KC_M)
+#define HD2_LHY ALL_T(KC_P)
+#define HD2_RHY ALL_T(KC_DOT)
+#define HD2_RME MEH_T(KC_Q)
+#define HD2_RRA RALT_T(KC_DQUO)
 
 // Custom Tap-Hold
 #define C_ALT_F4 LT(0, KC_F4)

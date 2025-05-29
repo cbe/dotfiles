@@ -9,6 +9,17 @@ shortcuts = {
   { chord = hyper_chord, key = "d", app = "Visual Studio Code" },
   { chord = hyper_chord, key = "f", app = "Chromium" },
   { chord = hyper_chord, key = "g", app = "Windows App" },
+
+  -- Alternative bindings for: Hands Down Neu
+  -- { chord = hyper_chord, key = "w", app = "Finder" },
+  -- { chord = hyper_chord, key = "f", app = "bitwarden.app" },
+  -- { chord = hyper_chord, key = "m", app = "Slack" },
+  -- { chord = hyper_chord, key = "p", app = "Obsidian" },
+  -- { chord = hyper_chord, key = "r", app = "Firefox" },
+  -- { chord = hyper_chord, key = "s", app = "kitty" },
+  -- { chord = hyper_chord, key = "n", app = "Visual Studio Code" },
+  -- { chord = hyper_chord, key = "t", app = "Chromium" },
+  -- { chord = hyper_chord, key = "b", app = "Windows App" },
 }
 
 -- Application shortcuts
