@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum layers {
     _BASE,
+    _BASE_HD,
     _NUM,
     _NAV,
     _SYM,
@@ -61,15 +62,44 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     return true;
 }
 
+// Keep track of the current default layer
+int default_layer = _BASE;
+void track_default_layer(void) {
+    uint32_t layer_state = default_layer_state;
+
+    // Check which layer is active
+    if (layer_state & (1UL << _BASE)) {
+        default_layer = _BASE;
+    } else if (layer_state & (1UL << _BASE_HD)) {
+        default_layer = _BASE_HD;
+    }
+}
+
+// Callbacks
+void matrix_scan_user(void) {
+    track_default_layer();
+}
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX,    KC_Q, HR2_LRA, HR2_LME, HR2_LHY,    KC_T,                         KC_Y, HR2_RHY, HR2_RME, HR2_RRA,    KC_P, XXXXXXX,
+ DF(_BASE_HD),    KC_Q, HR2_LRA, HR2_LME, HR2_LHY,    KC_T,                         KC_Y, HR2_RHY, HR2_RME, HR2_RRA,    KC_P, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_ESC, HR3_LGU, HR3_LLA, HR3_LCT, HR3_LSH,    KC_G,                         KC_H, HR3_RSH, HR3_RCT, HR3_RLA, HR3_RGU, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       CW_TOGG,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_BSLS,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                        XXXXXXX,  LT(_NUM,KC_SPC),  LT(_NAV,KC_TAB),     LT(_MED,KC_ENT), LT(_SYM,KC_BSPC), XXXXXXX
+                    //`--------------------------------------------'  `--------------------------------------------'
+  ),
+
+    [_BASE_HD] = LAYOUT_split_3x6_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+    DF(_BASE),    KC_W, HD2_LRA, HD2_LME, HD2_LHY,    KC_V,                      KC_SLSH, HD2_RHY, HD2_RME, HD2_RRA, KC_QUOT,    KC_Z,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+       KC_ESC, HD3_LGU, HD3_LLA, HD3_LCT, HD3_LSH,    KC_B,                      KC_COMM, HD3_RSH, HD3_RCT, HD3_RLA, HD3_RGU,    KC_J,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      CW_TOGG,    KC_X,    KC_C,    KC_L,    KC_D,    KC_G,                      KC_MINS,    KC_U,    KC_O,    KC_Y,    KC_K, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                         XXXXXXX,  LT(_NUM,KC_SPC),  LT(_NAV,KC_TAB),     LT(_MED,KC_ENT), LT(_SYM,KC_BSPC), XXXXXXX
                     //`--------------------------------------------'  `--------------------------------------------'
@@ -270,25 +300,37 @@ LT(_FN,KC_ESC),KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                     
 
             // Layer
             oled_write("Layer: ", false);
-            switch (get_highest_layer(layer_state)) {
-                case _BASE:
-                    oled_write("base", false);
+            if (get_highest_layer(layer_state) <= _BASE_HD) {
+                switch (default_layer) {
+                    case _BASE:
+                    oled_write("base [asdf]", false);
                     break;
-                case _NUM:
-                    oled_write("numbers", false);
+                    case _BASE_HD:
+                    oled_write("base [rsnt]", false);
                     break;
-                case _NAV:
-                    oled_write("navigation", false);
-                    break;
-                case _SYM:
-                    oled_write("symbols", false);
-                    break;
-                case _MED:
-                    oled_write("media", false);
-                    break;
-                case _FN:
-                    oled_write("function", false);
-                    break;
+                }
+            } else {
+                switch (get_highest_layer(layer_state)) {
+                    case _BASE:
+                    case _BASE_HD:
+                        // Do nothing as it has to be handled differently, see `read_default_layer`
+                        break;
+                    case _NUM:
+                        oled_write("numbers", false);
+                        break;
+                    case _NAV:
+                        oled_write("navigation", false);
+                        break;
+                    case _SYM:
+                        oled_write("symbols", false);
+                        break;
+                    case _MED:
+                        oled_write("media", false);
+                        break;
+                    case _FN:
+                        oled_write("function", false);
+                        break;
+                }
             }
             oled_advance_page(true);
 
