@@ -95,11 +95,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_BASE_HD] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-    DF(_BASE),    KC_W, HD2_LRA, HD2_LME, HD2_LHY,    KC_V,                      KC_SLSH, HD2_RHY, HD2_RME, HD2_RRA, KC_QUOT,    KC_Z,
+    DF(_BASE),    KC_W, HD2_LRA, HD2_LME, HD2_LHY,    KC_V,                      KC_SLSH, HD2_RHY, HD2_RME, HD2_RRA,    KC_Z, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_ESC, HD3_LGU, HD3_LLA, HD3_LCT, HD3_LSH,    KC_B,                      KC_COMM, HD3_RSH, HD3_RCT, HD3_RLA, HD3_RGU,    KC_J,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      CW_TOGG,    KC_X,    KC_C,    KC_L,    KC_D,    KC_G,                      KC_MINS,    KC_U,    KC_O,    KC_Y,    KC_K, KC_BSLS,
+      CW_TOGG,    KC_X,    KC_C,    KC_L,    KC_D,    KC_G,                      KC_SCLN,    KC_U,    KC_O,    KC_Y,    KC_K, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                         XXXXXXX,  LT(_NUM,KC_SPC),  LT(_NAV,KC_TAB),     LT(_MED,KC_ENT), LT(_SYM,KC_BSPC), XXXXXXX
                     //`--------------------------------------------'  `--------------------------------------------'

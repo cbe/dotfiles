@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HD2_LHY ALL_T(KC_P)
 #define HD2_RHY ALL_T(KC_DOT)
 #define HD2_RME MEH_T(KC_Q)
-#define HD2_RRA RALT_T(KC_DQUO)
+#define HD2_RRA RALT_T(KC_QUOT)
 
 // Custom Tap-Hold
 #define C_ALT_F4 LT(0, KC_F4)
