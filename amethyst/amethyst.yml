@@ -44,16 +44,25 @@ mod2:
   - control
   - command
 
-
 # Swap the position of the currently focused window with the next window in the list going counter-clockwise.
 swap-ccw:
   mod: mod1
-  key: j
+  key: a
 
 # Swap the position of the currently focused window with the next window in the list going clockwise.
 swap-cw:
   mod: mod1
-  key: k
+  key: e
+
+# Shrink the main pane by a percentage of the screen dimension as defined by window-resize-step. Note that not all layouts respond to this command.
+shrink-main:
+  mod: mod1
+  key: ","
+
+# Expand the main pane by a percentage of the screen dimension as defined by window-resize-step. Note that not all layouts respond to this command.
+expand-main:
+  mod: mod1
+  key: i
 
 # Move the currently focused window to the space to the left.
 throw-space-left:
@@ -65,7 +74,19 @@ throw-space-right:
   mod: mod1
   key: right
 
+###########################################################
 # Unset a few unwanted commands
+###########################################################
+
+# Increase the number of windows in the main pane. Note that not all layouts respond to this command.
+increase-main:
+  mod: ""
+  key: ""
+
+# Decrease the number of windows in the main pane. Note that not all layouts respond to this command.
+decrease-main:
+  mod: ""
+  key: ""
 
 # Move to the previous layout in the list.
 cycle-layout-backward:
