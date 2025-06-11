@@ -19,7 +19,7 @@ if ask_yes_or_no "Symlink '~/.gitconfig' to dotfiles?"
     if ask_yes_or_no "Regarding '~/.gitconfig', are you at work?"
         ln -sf ~/dotfiles/git/gitconfig-work ~/.gitconfig
     else
-        ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
+        ln -sf ~/dotfiles/git/gitconfig-personal ~/.gitconfig
     end
 end
 

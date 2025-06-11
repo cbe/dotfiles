@@ -1,6 +1,12 @@
 [include]
-  path = "~/dotfiles/git/gitconfig"
+  path = "~/dotfiles/git/gitconfig-base"
 
 [user]
   name = cbenker
   email = cbenker@users.noreply.github.com
+
+[includeIf "gitdir:~/dotfiles/.git"]
+  path = "~/dotfiles/git/gitconfig-personal"
+
+[includeIf "gitdir:~/Projects/Personal/"]
+  path = "~/dotfiles/git/gitconfig-personal"

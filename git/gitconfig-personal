@@ -1,0 +1,6 @@
+[include]
+  path = "~/dotfiles/git/gitconfig-base"
+
+[user]
+  name = cbe
+  email = cbe@users.noreply.github.com
