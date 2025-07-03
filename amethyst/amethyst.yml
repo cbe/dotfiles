@@ -74,6 +74,11 @@ throw-space-right:
   mod: mod1
   key: right
 
+# Rerun the current layout's algorithm.
+reevaluate-windows:
+  mod: mod1
+  key: r
+
 ###########################################################
 # Unset a few unwanted commands
 ###########################################################
@@ -140,11 +145,6 @@ select-column-layout:
 
 # Turn on or off tiling entirely.
 toggle-tiling:
-  mod: ""
-  key: ""
-
-# Rerun the current layout's algorithm.
-reevaluate-windows:
   mod: ""
   key: ""
 
