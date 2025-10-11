@@ -64,16 +64,6 @@ expand-main:
   mod: mod1
   key: i
 
-# Move the currently focused window to the space to the left.
-throw-space-left:
-  mod: mod1
-  key: left
-
-# Move currently the focused window to the space to the right.
-throw-space-right:
-  mod: mod1
-  key: right
-
 # Rerun the current layout's algorithm.
 reevaluate-windows:
   mod: mod1
@@ -82,6 +72,16 @@ reevaluate-windows:
 ###########################################################
 # Unset a few unwanted commands
 ###########################################################
+
+# Move the currently focused window to the space to the left.
+throw-space-left:
+  mod: ""
+  key: "" # 'page-up' not supported yet: https://github.com/ianyh/Amethyst/issues/1689
+
+# Move currently the focused window to the space to the right.
+throw-space-right:
+  mod: ""
+  key: "" # 'page-down' not supported yet: https://github.com/ianyh/Amethyst/issues/1689
 
 # Increase the number of windows in the main pane. Note that not all layouts respond to this command.
 increase-main:
