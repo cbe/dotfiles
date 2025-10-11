@@ -49,22 +49,10 @@
   { "key": "ctrl+shift+d", "command": "editor.action.duplicateSelection", "when": "!isMac" },
   { "key": "cmd+shift+d", "command": "-workbench.view.debug", "when": "viewContainer.workbench.view.debug.enabled" },
   { "key": "cmd+shift+d", "command": "editor.action.duplicateSelection", "when": "isMac" },
-  {
-    "key": "ctrl+up", "command": "cursorMove", "when": "editorTextFocus",
-    "args": { "to": "prevBlankLine", "by": "wrappedLine" }
-  },
-  {
-    "key": "ctrl+shift+up", "command": "cursorMove", "when": "editorTextFocus",
-    "args": { "to": "prevBlankLine", "by": "wrappedLine", "select": true }
-  },
-  {
-    "key": "ctrl+down", "command": "cursorMove", "when": "editorTextFocus",
-    "args": { "to": "nextBlankLine", "by": "wrappedLine" }
-  },
-  {
-    "key": "ctrl+shift+down", "command": "cursorMove", "when": "editorTextFocus",
-    "args": { "to": "nextBlankLine", "by": "wrappedLine", "select": true }
-  },
+  { "key": "ctrl+up", "command": "cursorMove", "when": "editorTextFocus", "args": { "to": "prevBlankLine", "by": "wrappedLine" } },
+  { "key": "ctrl+shift+up", "command": "cursorMove", "when": "editorTextFocus", "args": { "to": "prevBlankLine", "by": "wrappedLine", "select": true } },
+  { "key": "ctrl+down", "command": "cursorMove", "when": "editorTextFocus", "args": { "to": "nextBlankLine", "by": "wrappedLine" } },
+  { "key": "ctrl+shift+down", "command": "cursorMove", "when": "editorTextFocus", "args": { "to": "nextBlankLine", "by": "wrappedLine", "select": true } },
 
   // Word operations
   { "key": "cmd+k cmd+u", "command": "editor.action.transformToUppercase", "when": "isMac" },
@@ -73,11 +61,7 @@
   { "key": "ctrl+k ctrl+l", "command": "editor.action.transformToLowercase", "when": "!isMac" },
 
   // Selection
-  { "key": "shift+alt+up", "command": "-editor.action.copyLinesUpAction", "when": "editorTextFocus && !editorReadonly" },
-  { "key": "shift+alt+up", "command": "-notebook.cell.copyUp", "when": "notebookEditorFocused && !inputFocus" },
   { "key": "shift+alt+up", "command": "editor.action.insertCursorAbove", "when": "editorTextFocus" },
-  { "key": "shift+alt+down", "command": "-editor.action.copyLinesDownAction", "when": "editorTextFocus && !editorReadonly" },
-  { "key": "shift+alt+down", "command": "-notebook.cell.copyDown", "when": "notebookEditorFocused && !inputFocus" },
   { "key": "shift+alt+down", "command": "editor.action.insertCursorBelow", "when": "editorTextFocus" },
   { "key": "alt+cmd+up", "command": "-editor.action.insertCursorAbove", "when": "editorTextFocus && isMac" },
   { "key": "alt+cmd+down", "command": "-editor.action.insertCursorBelow", "when": "editorTextFocus && isMac" },
