@@ -1,3 +1,6 @@
+// See these two files for default bindings for linux/macOS
+// https://github.com/codebling/vs-code-default-keybindings/blob/master/linux.keybindings.json
+// https://github.com/codebling/vs-code-default-keybindings/blob/master/macos.keybindings.json
 [
   // Panes
   { "key": "cmd+shift+r", "command": "workbench.view.extension.references-view", "when": "isMac" },
@@ -65,18 +68,14 @@
   { "key": "shift+alt+down", "command": "editor.action.insertCursorBelow", "when": "editorTextFocus" },
   { "key": "alt+cmd+up", "command": "-editor.action.insertCursorAbove", "when": "editorTextFocus && isMac" },
   { "key": "alt+cmd+down", "command": "-editor.action.insertCursorBelow", "when": "editorTextFocus && isMac" },
-  { "key": "ctrl+shift+meta+left", "command": "cursorWordPartLeftSelect", "when": "textInputFocus" },
-  { "key": "ctrl+shift+alt+left", "command": "cursorWordPartLeftSelect", "when": "textInputFocus && isMac" },
-  { "key": "ctrl+shift+alt+left", "command": "-cursorWordPartLeftSelect", "when": "textInputFocus" },
-  { "key": "ctrl+shift+meta+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus" },
-  { "key": "ctrl+shift+alt+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus && isMac" },
-  { "key": "ctrl+shift+alt+right", "command": "-cursorWordPartRightSelect", "when": "textInputFocus" },
-  { "key": "ctrl+shift+meta+up", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus" },
-  { "key": "ctrl+shift+alt+up", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus && isMac" },
-  { "key": "ctrl+shift+left", "command": "-editor.action.smartSelect.shrink", "when": "editorTextFocus" },
-  { "key": "ctrl+shift+meta+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
-  { "key": "ctrl+shift+alt+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus && isMac" },
-  { "key": "ctrl+shift+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus" },
+  { "key": "ctrl+shift+alt+left", "command": "cursorWordPartLeftSelect", "when": "textInputFocus" },
+  { "key": "ctrl+shift+alt+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus" },
+  { "key": "shift+alt+left", "command": "-editor.action.smartSelect.shrink", "when": "editorTextFocus && (isLinux || isWindows)" },
+  { "key": "ctrl+shift+left", "command": "-editor.action.smartSelect.shrink", "when": "editorTextFocus && isMac" },
+  { "key": "ctrl+shift+alt+up", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus" },
+  { "key": "shift+alt+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus && (isLinux || isWindows)" },
+  { "key": "ctrl+shift+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus && isMac" },
+  { "key": "ctrl+shift+alt+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
 
   // macOS
   { "key": "cmd+i", "command": "-inlineChat.start", "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput" },
