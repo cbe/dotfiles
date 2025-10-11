@@ -17,7 +17,6 @@ brew "jq"
 brew "media-info"
 brew "pwgen"
 brew "ripgrep"
-brew "sk"
 brew "starship"
 brew "zoxide"
 

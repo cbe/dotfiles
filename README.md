@@ -14,7 +14,6 @@ pacman -S \
   kitty \            # Terminal
   neovim \
   helix \
-  skim \             # Fuzzy finder
   starship \         # Command line prompt
   ttc-iosevka \      # Main monospaced font
   xsel \             # For copy/pasta 🍝 convenience, see `fish/config.fish`
