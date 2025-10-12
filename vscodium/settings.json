@@ -19,6 +19,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  "editor.accessibilitySupport": "off",
   "emmet.showExpandedAbbreviation": "never",
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 15,
