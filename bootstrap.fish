@@ -46,6 +46,30 @@ end
 # Mac
 
 if _is_mac
+    if ask_yes_or_no "Configure mouse/keyboard defaults? (⚠️ will flash screen a few times)"
+        # Dock
+        defaults write com.apple.dock autohide -bool true
+        defaults write com.apple.dock tilesize -int 72
+        defaults write com.apple.dock mineffect -string scale
+        # Finder
+        defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+        defaults write com.apple.finder FXPreferredViewStyle -string Nlsv
+        # Menu bar
+        defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+        # Reduce motion
+        defaults write com.apple.universalaccess.plist reduceMotion -bool true
+
+        # Keyboard
+        # Increase key repeat to a max
+        defaults write NSGlobalDomain KeyRepeat -int 2
+        defaults write NSGlobalDomain InitialKeyRepeat -int 8
+        # Disable accent key overlay
+        defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+        # Restart things for settings to take effect
+        killall Dock Finder SystemUIServer
+    end
+
     if ask_yes_or_no "Symlink '~/.hammerspoon' to dotfiles"
         ln -sfn ~/dotfiles/hammerspoon ~/.hammerspoon
     end
