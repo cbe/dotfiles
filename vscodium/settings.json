@@ -32,6 +32,7 @@
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.enable": { "*": false },
+  "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
