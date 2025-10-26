@@ -8,4 +8,5 @@ dconf load /org/gnome/mutter/keybindings/ <"$gnome_backup_dir/mutter/keybindings
 dconf load /org/gnome/mutter/wayland/keybindings/ <"$gnome_backup_dir/mutter/wayland/keybindings.conf"
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ <"$gnome_backup_dir/settings-daemon/plugins/media-keys.conf"
 dconf load /org/gnome/shell/keybindings/ <"$gnome_backup_dir/shell/keybindings.conf"
+dconf load /org/gnome/desktop/peripherals/keyboard/ <"$gnome_backup_dir/desktop/peripherals/keyboard.conf"
 dconf load /org/gnome/desktop/interface/ <"$gnome_backup_dir/desktop/interface.conf"

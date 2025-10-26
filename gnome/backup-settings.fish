@@ -19,6 +19,8 @@ set -a namespaces mutter/keybindings
 set -a namespaces mutter/wayland/keybindings
 set -a namespaces settings-daemon/plugins/media-keys
 set -a namespaces shell/keybindings
+# Input configuration
+set -a namespaces desktop/peripherals/keyboard
 # Other more or less important settings
 set -a namespaces desktop/interface
 
