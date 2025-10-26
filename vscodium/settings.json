@@ -38,6 +38,10 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.alignment": "left",
   "gitlens.statusBar.format": "${author}, ${message}, ${agoOrDate}",
+  "html.suggest.html5": false,
+  "html.autoClosingTags": false,
+  "html.hover.documentation": false,
+  "html.hover.references": false,
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "search.exclude": {
     ".git": true
