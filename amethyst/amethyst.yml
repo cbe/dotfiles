@@ -36,6 +36,7 @@ mod1:
   - option
   - shift
   - control
+  - command
 
 # Second mod (default option + shift + control).
 mod2:
@@ -64,10 +65,21 @@ expand-main:
   mod: mod1
   key: i
 
+
+# Toggle the floating state of the currently focused window; i.e., if it was floating make it tiled and if it was tiled make it floating.
+toggle-float:
+  mod: mod1
+  key: o
+
 # Rerun the current layout's algorithm.
 reevaluate-windows:
   mod: mod1
   key: r
+
+# Automatically quit and reopen Amethyst.
+relaunch-amethyst:
+  mod: mod1
+  key: x
 
 ###########################################################
 # Unset a few unwanted commands
@@ -150,10 +162,5 @@ toggle-tiling:
 
 # Turn on or off focus-follows-mouse.
 toggle-focus-follows-mouse:
-  mod: ""
-  key: ""
-
-# Automatically quit and reopen Amethyst.
-relaunch-amethyst:
   mod: ""
   key: ""
