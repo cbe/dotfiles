@@ -1,0 +1,32 @@
+# Font
+font-family = Iosevka
+# Disable programming ligatures
+font-feature = -calt
+
+# Theme
+theme = Catppuccin Frappe
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# Behavior
+quit-after-last-window-closed = true
+
+# OS tweaks
+macos-option-as-alt = true
+
+# Custom keybindings
+keybind = ctrl+shift+,=reload_config
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+backslash=new_split:down
+keybind = ctrl+page_up=goto_split:previous
+keybind = ctrl+page_down=goto_split:next
+keybind = ctrl+shift+up=resize_split:up,25
+keybind = ctrl+shift+down=resize_split:down,25
+
+# Include optional additional configuration files
+config-file = ?local

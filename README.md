@@ -1,6 +1,6 @@
 # dotfiles 📜
 
-| ℹ️   | This repository is expected to be cloned to $HOME/dotfiles |
+| ℹ️  | This repository is expected to be cloned to $HOME/dotfiles |
 | --- | :--------------------------------------------------------- |
 
 ## Required packages
@@ -11,7 +11,7 @@
 pacman -S \
   eza \              # eza is an ls replacement
   fish \             # fish-shell
-  kitty \            # Terminal
+  ghostty \          # Terminal
   neovim \
   helix \
   starship \         # Command line prompt
