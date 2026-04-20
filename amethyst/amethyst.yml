@@ -9,7 +9,6 @@ layouts:
 floating:
   - "org.mozilla.firefox"
   - "org.chromium.Chromium"
-  - "net.kovidgoyal.kitty"
   - "com.mitchellh.ghostty"
   - "md.obsidian"
   - "com.vscodium"

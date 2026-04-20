@@ -31,10 +31,6 @@ if ask_yes_or_no "Symlink '~/.config/nvim/init.vim' to dotfiles?"
     ln -sf ~/dotfiles/vim/vimrc ~/.config/nvim/init.vim
 end
 
-if ask_yes_or_no "Symlink '~/.config/kitty' to dotfiles?"
-    ln -sfn ~/dotfiles/kitty ~/.config/kitty
-end
-
 if ask_yes_or_no "Symlink '~/.config/ghostty' to dotfiles?"
     ln -sfn ~/dotfiles/ghostty ~/.config/ghostty
 end

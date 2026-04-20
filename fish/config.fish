@@ -57,11 +57,6 @@ if _has_program timew
 end
 
 if status is-interactive
-    # Enable colors when using SSH with kitty
-    if _has_program kitty
-        set -gx TERM xterm-256color
-    end
-
     ## Initializations
     # Untracked functions
     set -a fish_function_path $HOME/dotfiles/fish/additional
