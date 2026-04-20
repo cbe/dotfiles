@@ -54,6 +54,10 @@ if _has_program timew
     alias tt='timew'
     alias tts='timew summary :id :week'
     alias ttg='timew summary :id :yesterday'
+
+    function timew-story
+        timew | grep --extended-regexp --only-matching "T-[0-9]+"
+    end
 end
 
 if status is-interactive
