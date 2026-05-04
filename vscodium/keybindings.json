@@ -152,6 +152,7 @@
   { "key": "ctrl+shift+space", "command": "editor.action.triggerParameterHints", "when": "editorHasSignatureHelpProvider && editorTextFocus" },
 
   // Symbols
+  { "key": "ctrl+shift+g", "command": "-workbench.view.scm" }, // Disables git lens default shortcut
   { "key": "ctrl+shift+g", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus" },
   { "key": "shift+f7", "command": "-editor.action.wordHighlight.prev" },
   { "key": "alt+left", "command": "editor.action.wordHighlight.prev", "when": "editorTextFocus && hasWordHighlights" },
