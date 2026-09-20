@@ -122,6 +122,8 @@
   { "key": "alt+cmd+backspace", "command": "-editor.action.removeBrackets" },
   { "key": "ctrl+alt+backspace", "command": "-editor.action.removeBrackets" },
   { "key": "ctrl+alt+shift+b", "command": "editor.action.removeBrackets", "when": "editorTextFocus" },
+  { "key": "ctrl+[", "command": "editor.action.outdentLines", "when": "editorTextFocus && !editorReadonly" },
+  { "key": "ctrl+]", "command": "editor.action.indentLines", "when": "editorTextFocus && !editorReadonly" },
 
   // Word operations
   { "key": "ctrl+k ctrl+u", "command": "editor.action.transformToUppercase" },
