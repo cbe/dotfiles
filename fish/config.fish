@@ -15,14 +15,6 @@ bind \cQ suppress-autosuggestion # Ctrl + Q
 
 ## Aliases
 
-# Neovim
-if _has_program nvim
-    set -gx EDITOR nvim
-
-    alias vi='nvim'
-    alias vim='nvim'
-end
-
 # helix editor
 if _has_program helix
     alias hx='helix'

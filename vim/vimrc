@@ -10,12 +10,3 @@ set expandtab
 
 " enable syntax highlighting
 syn on
-
-" install plugins, needs vim-plug, see:
-" https://github.com/junegunn/vim-plug
-call plug#begin()
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-call plug#end()
-
-" set catppuccin as theme
-colorscheme catppuccin-frappe

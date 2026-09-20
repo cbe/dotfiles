@@ -12,7 +12,6 @@ pacman -S \
   eza \              # eza is an ls replacement
   fish \             # fish-shell
   ghostty \          # Terminal
-  neovim \
   helix \
   starship \         # Command line prompt
   ttc-iosevka \      # Main monospaced font
