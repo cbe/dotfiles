@@ -37,7 +37,7 @@ end
 
 # Linux
 
-if _is_linux
+if is_linux
     if type dconf &>/dev/null && ask_yes_or_no "Restore Gnome settings"
         ./gnome/restore-settings.fish
     end
@@ -45,7 +45,7 @@ end
 
 # Mac
 
-if _is_mac
+if is_mac
     if ask_yes_or_no "Configure mouse/keyboard defaults? (⚠️ will flash screen a few times)"
         # Dock
         defaults write com.apple.dock autohide -bool true
@@ -82,11 +82,11 @@ end
 # VSCode/VSCodium
 
 if ask_yes_or_no "Symlink VSCodium to dotfiles?"
-    if _is_linux
+    if is_linux
         ln -sfn ~/dotfiles/vscodium/keybindings.json ~/.config/VSCodium/User/keybindings.json
         ln -sfn ~/dotfiles/vscodium/settings.json ~/.config/VSCodium/User/settings.json
         ln -sfn ~/dotfiles/vscodium/snippets ~/.config/VSCodium/User/snippets
-    else if _is_mac
+    else if is_mac
         ln -sfn ~/dotfiles/vscodium/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
         ln -sfn ~/dotfiles/vscodium/settings.json ~/Library/Application\ Support/Code/User/settings.json
         ln -sfn ~/dotfiles/vscodium/snippets ~/Library/Application\ Support/Code/User/snippets
