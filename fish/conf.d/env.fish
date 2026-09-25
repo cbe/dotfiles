@@ -11,11 +11,3 @@ set -a fish_function_path $HOME/dotfiles/fish/additional
 
 # Disable fishs default greeting message by emptying it
 set -g fish_greeting
-
-if status is-interactive
-    # starship prompt
-    if command -q starship
-        set -gx STARSHIP_CONFIG "$HOME/dotfiles/starship/starship.toml"
-        starship init fish | source
-    end
-end

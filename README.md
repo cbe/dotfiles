@@ -13,7 +13,6 @@ pacman -S \
   fish \             # fish-shell
   ghostty \          # Terminal
   helix \
-  starship \         # Command line prompt
   ttc-iosevka \      # Main monospaced font
   xsel \             # For copy/pasta 🍝 convenience, see `fish/config.fish`
   yay \
