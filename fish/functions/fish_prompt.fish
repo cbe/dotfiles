@@ -3,7 +3,7 @@ function fish_prompt --description 'Write out the prompt'
     set -g last_status $status
 
     echo
-    string join " " -- (set_color -f magenta ;; get_login) (set_color -f bryellow ;; get_pwd) (set_color -f green ;; get_vcs) (set_color -f black ;; get_time) (get_status)
+    string join " " -- (set_color -f red ;; echo "$(set_color -b red)") (set_color -f '#181926' -b red ;; get_login) (set_color -f red -b bryellow ;; echo ) (set_color -f '#181926' -b bryellow ;; get_pwd) (set_color -f bryellow -b green ;; echo ) (set_color -f '#181926' -b green ;; get_vcs) (set_color -f green  -b brblue ;; echo ) (set_color -f '#181926' -b brblue ;; get_time) (set_color --reset ;; set_color -f brblue ;; echo ) (set_color --reset) (get_status)
 end
 
 function get_login
