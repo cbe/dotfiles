@@ -2,7 +2,11 @@ function fish_prompt --description 'Write out the prompt'
     # Prompt status only if it's not 0
     set -g last_status $status
 
-    echo
+    # Print a newline when it's not the first prompt
+    if test $prompt_number -gt 1
+        echo
+    end
+
     string join " " -- (set_color -f red ;; echo "$(set_color -b red)") (set_color -f '#181926' -b red ;; get_login) (set_color -f red -b bryellow ;; echo ) (set_color -f '#181926' -b bryellow ;; get_pwd) (set_color -f bryellow -b green ;; echo ) (set_color -f '#181926' -b green ;; get_vcs) (set_color -f green  -b brblue ;; echo ) (set_color -f '#181926' -b brblue ;; get_time) (set_color --reset ;; set_color -f brblue ;; echo ) (set_color --reset) (get_status)
 end
 
