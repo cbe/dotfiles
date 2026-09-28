@@ -46,6 +46,10 @@ end
 # Mac
 
 if is_mac
+    if ask_yes_or_no "Create empty '~/.hushlogin' file so new prompts start without last login message"
+        touch ~/.hushlogin
+    end
+
     if ask_yes_or_no "Configure mouse/keyboard defaults? (⚠️ will flash screen a few times)"
         # Dock
         defaults write com.apple.dock autohide -bool true
