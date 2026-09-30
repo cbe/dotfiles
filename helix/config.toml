@@ -5,6 +5,7 @@ scrolloff = 999
 cursorline = true
 color-modes = true
 insert-final-newline = true
+trim-trailing-whitespace = true
 
 [editor.cursor-shape]
 insert = "bar"
