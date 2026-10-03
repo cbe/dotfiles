@@ -144,10 +144,10 @@
   { "key": "ctrl+alt+shift+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus" },
   { "key": "shift+alt+left", "command": "-editor.action.smartSelect.shrink", "when": "editorTextFocus && (isLinux || isWindows)" },
   { "key": "ctrl+shift+left", "command": "-editor.action.smartSelect.shrink" },
-  { "key": "ctrl+alt+shift+up", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus" },
+  { "key": "ctrl+alt+shift+down", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus" },
   { "key": "shift+alt+right", "command": "-editor.action.smartSelect.expand", "when": "editorTextFocus && (isLinux || isWindows)" },
   { "key": "ctrl+shift+right", "command": "-editor.action.smartSelect.expand" },
-  { "key": "ctrl+alt+shift+down", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
+  { "key": "ctrl+alt+shift+up", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
 
   // Suggestions
   { "key": "cmd+i", "command": "-editor.action.triggerSuggest" },
