@@ -3,7 +3,6 @@
   sw = switch
   st = status
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(magenta)(%Creset%Cgreen%cr%Creset, %C(blue)%an%Creset%C(magenta))%Creset' --abbrev-commit --date=relative
-  tags = tag --column
   sh = show --ext-diff
 
 [init]
@@ -11,6 +10,15 @@
 
 [core]
   hooksPath = ~/dotfiles/git/hooks
+
+[column]
+  ui = auto
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = version:refname
 
 [diff]
   external = difft
@@ -23,6 +31,4 @@
   autoStash = true
 
 [pager]
-  branch = false
-  tags = false
   difftool = true
