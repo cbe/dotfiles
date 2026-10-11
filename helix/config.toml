@@ -23,6 +23,25 @@ smart-case = false
 [editor.soft-wrap]
 enable = true
 
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "file-modification-indicator",
+  "file-encoding",
+  "file-indent-style",
+  "read-only-indicator",
+]
+right = [
+  "diagnostics",
+  "workspace-diagnostics",
+  "selections",
+  "register",
+  "position",
+  "file-encoding",
+]
+
 # Custom keybindings
 [keys.normal]
 # Buffers
