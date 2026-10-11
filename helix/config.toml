@@ -19,3 +19,12 @@ skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
+
+# Custom keybindings
+[keys.normal]
+# Buffers
+C-s = ":write"
+
+# Selection
+A-C-S-s = "save_selection" # Default is C-s which I want to use as write
+
