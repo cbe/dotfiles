@@ -40,6 +40,10 @@
 [rebase]
   autoStash = true
 
+[rerere]
+  enabled = true
+  autoupdate = true
+
 [pager]
   difftool = true
 
