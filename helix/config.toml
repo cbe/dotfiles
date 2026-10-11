@@ -32,3 +32,12 @@ C-s = ":write"
 # Selection
 A-C-S-s = "save_selection" # Default is C-s which I want to use as write
 
+# Markers
+## Changes
+C-up = "goto_prev_change"
+C-down = "goto_next_change"
+## Diagnostics
+C-S-y = "goto_prev_diag"
+C-y = "goto_next_diag"
+A-S-y = "workspace_diagnostics_picker"
+A-y = "diagnostics_picker"
