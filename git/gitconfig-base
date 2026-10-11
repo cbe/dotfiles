@@ -30,6 +30,10 @@
 [pull]
   rebase = false # default pull strategy (merge)
 
+[fetch]
+  prune = true
+  pruneTags = true
+
 [rebase]
   autoStash = true
 
