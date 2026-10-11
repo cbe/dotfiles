@@ -21,6 +21,9 @@
   sort = version:refname
 
 [diff]
+  algorithm = histogram
+  colorMoved = true
+  # difft
   external = difft
   tool = difft
 
