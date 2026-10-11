@@ -42,8 +42,7 @@ brew bundle
 
 ```sh
 pacman -S \
-  typescript-language-server \      # helix editor
-  vscode-css-language-server        # helix editor
+  typescript-language-server        # helix editor
 
 yay -S \
   superhtml                         # helix editor
