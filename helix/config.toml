@@ -26,6 +26,7 @@ enable = true
 # Custom keybindings
 [keys.normal]
 # Buffers
+C-S-r = ":reload-all"
 C-s = ":write"
 
 # Selection
