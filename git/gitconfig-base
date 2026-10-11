@@ -27,6 +27,9 @@
   external = difft
   tool = difft
 
+[push]
+  autoSetupRemote = true
+
 [pull]
   rebase = false # default pull strategy (merge)
 
