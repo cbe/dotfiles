@@ -17,6 +17,9 @@ hidden = false
 render = true
 skip-levels = 1
 
+[editor.search]
+smart-case = false
+
 [editor.soft-wrap]
 enable = true
 
