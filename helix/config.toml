@@ -29,6 +29,10 @@ enable = true
 C-S-r = ":reload-all"
 C-s = ":write"
 
+# Movement
+A-w = "move_next_sub_word_start"
+A-b = "move_prev_sub_word_start"
+
 # Selection
 A-C-S-s = "save_selection" # Default is C-s which I want to use as write
 
