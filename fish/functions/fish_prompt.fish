@@ -24,7 +24,7 @@ function get_login
 end
 
 function get_pwd
-    prompt_pwd --full-length-dirs 2
+    prompt_pwd --full-length-dirs 1
 end
 
 function get_vcs
