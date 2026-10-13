@@ -1,16 +1,5 @@
 #!/usr/bin/env fish
 
-function ask_yes_or_no
-    set -l result ( read -P "$argv ([y]es or [N]o): " | tr '[A-Z]' '[a-z]' )
-
-    switch $result
-        case y yes
-            true
-        case '*'
-            false
-    end
-end
-
 if ask_yes_or_no "Symlink '~/.config/fish' to dotfiles?"
     ln -sf ~/dotfiles/fish ~/.config/fish
 end
