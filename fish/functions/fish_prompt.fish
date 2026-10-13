@@ -40,7 +40,7 @@ function get_vcs
     # VCS settings
     set -g __fish_git_prompt_showdirtystate true
 
-    fish_vcs_prompt | string trim
+    fish_vcs_prompt | string trim --chars " ()"
 end
 
 function get_time --description 'Simply print the full time (HH:mm:ss)'
