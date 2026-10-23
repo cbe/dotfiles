@@ -1,4 +1,4 @@
-function fish_prompt --description 'Write out the prompt'
+function fish_prompt --description "Write out the prompt"
     # Prompt status only if it's not 0
     set -g last_status $status
 
@@ -43,14 +43,14 @@ function get_vcs
     fish_vcs_prompt | string trim --chars " ()"
 end
 
-function get_time --description 'Simply print the full time (HH:mm:ss)'
+function get_time --description "Simply print the full time (HH:mm:ss)"
     date +'%H:%M:%S'
 end
 
 function pad_duration --argument-names time
     string pad --width 2 --char 0 $time
 end
-function get_duration --description 'Print the duration of the last executed command'
+function get_duration --description "Print the duration of the last executed command"
     if test $CMD_DURATION -eq 0
         echo
         return
