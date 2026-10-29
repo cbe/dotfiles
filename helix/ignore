@@ -1,0 +1,5 @@
+# Globally ignore files as hiding all `.gitignore`d files from
+# `editor.file-picker` might ignore a few too many files
+
+# node projects
+/node_modules/
