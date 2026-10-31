@@ -1,4 +1,5 @@
 # Font
+font-size = 13
 font-family = Iosevka
 # Disable programming ligatures
 font-feature = -calt
