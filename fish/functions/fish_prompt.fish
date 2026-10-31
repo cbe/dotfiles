@@ -7,21 +7,21 @@ function fish_prompt --description "Write out the prompt"
         echo
     end
 
-    set -l parts (set_color -f red ;; echo "$(set_color -b red)") \
+    set -l parts $(set_color -f red ;; echo -n "$(set_color -b red)") \
         (set_color -f '#181926' -b red ;; get_login) \
-        (set_color -f red -b bryellow ;; echo ) \
-        (set_color -f '#181926' -b bryellow ;; get_pwd) \
-        (set_color -f bryellow -b green ;; echo ) \
+        (set_color -f red -b yellow ;; echo ) \
+        (set_color -f '#181926' -b yellow ;; get_pwd) \
+        (set_color -f yellow -b green ;; echo ) \
         (set_color -f '#181926' -b green ;; get_vcs) \
-        (set_color -f green  -b brblue ;; echo ) \
-        (set_color -f '#181926' -b brblue ;; get_time)
+        (set_color -f green  -b blue ;; echo ) \
+        (set_color -f '#181926' -b blue ;; get_time)
 
     if test -n $(get_duration)
-        set -a parts (set_color -f brblue  -b magenta ;; echo ) \
+        set -a parts (set_color -f blue  -b magenta ;; echo ) \
             (set_color -f '#181926' -b magenta ;; get_duration) \
             (set_color --reset ;; set_color -f magenta ;; echo )
     else
-        set -a parts (set_color --reset ;; set_color -f brblue ;; echo )
+        set -a parts (set_color --reset ;; set_color -f blue ;; echo )
     end
 
     string join " " -- $parts \
