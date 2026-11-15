@@ -28,8 +28,4 @@ if command -q timew
     abbr tt timew
     abbr tts 'timew summary :id :week'
     abbr ttg 'timew summary :id :yesterday'
-
-    function timew-story
-        timew | grep --extended-regexp --only-matching "T-[0-9]+"
-    end
 end
